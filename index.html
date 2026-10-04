@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodipanda- Order Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Foodie<span>PANDA</span></div>
+            <button class="mobile-menu-toggle" aria-label="Open mobile menu">Menu</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-info">
+                <button class="cart-toggle">View Cart (<span id="cart-count">0</span>)</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Taza aur Swadisht Khana, Seedhe Aapke Ghar!</h1>
+            <p>Fastest delivery in the city.</p>
+            <div class="hero-badge">Best offers: Free delivery above ₹399</div>
+            <div class="hero-actions">
+                <a href="#menu" class="btn">Order Now</a>
+            </div>
+            <div class="hero-search">
+                <input type="text" id="search-input" placeholder="Aap kya khana chahte hain?">
+                <button id="search-btn" class="btn">Find Food</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Gallery Section (Yahan se images edit kar sakte hain) -->
+    <section id="menu" class="menu">
+        <h2 class="section-title">Hamara Menu</h2>
+        <div class="menu-filters">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="Indian">Indian</button>
+            <button class="category-btn" data-category="Sushi">Sushi</button>
+            <button class="category-btn" data-category="Burger">Burger</button>
+            <button class="category-btn" data-category="Dessert">Dessert</button>
+        </div>
+        <div class="food-container">
+            <!-- Image 1 -->
+            <div class="food-card" data-category="Dessert">
+                <div class="img-box">
+                    <img src="ice-cream-with-chocolate.jpg " alt="Ice Cream">
+                    <span class="item-badge popular">Popular</span>
+                </div>
+                <h3>Ice Cream</h3>
+                <p>₹299</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="food-card" data-category="Indian">
+                <div class="img-box">
+                    <img src="pexels-saveurssecretes-5410418.jpg" alt="Indian Plate">
+                    <span class="item-badge spicy">Spicy</span>
+                </div>
+                <h3>Indian plate</h3>
+                <p>₹149</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="food-card" data-category="Sushi">
+                <div class="img-box">
+                    <img src="delicious-sushi-fresh.jpg " alt="Sushi">
+                    <span class="item-badge fresh">Fresh</span>
+                </div>
+                <h3>Sushi</h3>
+                <p>₹199</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            <!-- Image 4 -->
+            <div class="food-card" data-category="Burger">
+                <div class="img-box">
+                    <img src="BURGER.jpg" alt="Burger">
+                    <span class="item-badge best">Best Seller</span>
+                </div>
+                <h3>Burger</h3>
+                <p>₹99</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            
+            <div class="food-card" data-category="Sandwich">
+                <div class="img-box">
+                    <img src="sandwhich.jpg" alt="Sandwich">
+                    <span class="item-badge best">Best Seller</span>
+                </div>
+                <h3>Sandwich</h3>
+                <p>₹199</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+
+             <div class="food-card" data-category="MilkShake">
+                <div class="img-box">
+                    <img src="MilkShake.jpg" alt="Milk Shake">
+                    <span class="item-badge best">Best Seller</span>
+                </div>
+                <h3>Milk Shake</h3>
+                <p>₹399</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            <div class="food-card" data-category="MACARONS">
+                <div class="img-box">
+                    <img src="MACARONS.jpg" alt="Macarons">
+                    <span class="item-badge best">Best Seller</span>
+                </div>
+                <h3>Macarons</h3>
+                <p>₹599</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+                
+
+        </div>
+    </section>
+
+    <section id="restaurants" class="featured-restaurants">
+        <div class="section-intro">
+            <h2 class="section-title">Featured Restaurants</h2>
+            <p>Local favorites aur restaurant ke best options.</p>
+        </div>
+        <div class="restaurant-cards">
+            <div class="restaurant-card">
+                <img src="BURGER.jpg" alt="Burger House">
+                <h3>Burger House</h3>
+                <p class="restaurant-meta">4.8 ★ · 25 mins</p>
+                <p>Fast, tasty burgers and shakes.</p>
+            </div>
+            <div class="restaurant-card">
+                <img src="delicious-sushi-fresh.jpg" alt="Sushi Studio">
+                <h3>Sushi Studio</h3>
+                <p class="restaurant-meta">4.9 ★ · 30 mins</p>
+                <p>Fresh sushi and Japanese favorites.</p>
+            </div>
+            <div class="restaurant-card">
+                <img src="pexels-saveurssecretes-5410418.jpg" alt="Indian Dhaba">
+                <h3>Indian Dhaba</h3>
+                <p class="restaurant-meta">4.7 ★ · 28 mins</p>
+                <p>Authentic Indian meals with spice.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trending" class="trending">
+        <h2 class="section-title">Trending right now</h2>
+        <p>Ye items sabse zyada order kiye ja rahe hain.</p>
+        <div class="trending-list">
+            <div class="trending-card">Sushi Platter</div>
+            <div class="trending-card">Cheese Burger</div>
+            <div class="trending-card">Garam Masaledaar Thali</div>
+            <div class="trending-card">Chocolate Dessert</div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>“Khana bahut tasty tha aur delivery time bhi theek tha. Rating 5/5!”</p>
+                <strong>– Priya singh</strong>
+            </div>
+            <div class="testimonial-card">
+                <p>“Order karna bahut asaan tha aur cart system accha laga.”</p>
+                <strong>– Amit kumar </strong>
+            </div>
+            <div class="testimonial-card">
+                <p>“Burger aur sushi dono bahut fresh aaye. Phir se order karenge.”</p>
+                <strong>– Kavita sinngh</strong>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About FoodiePANDA</h2>
+        <p>Hum aapko fresh aur tasty khana directly ghar tak deliver karte hain. Order karein aur khush ho jaayein.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: support@foodiepanda.com | Phone: +91 8630656194</p>
+    </section>
+
+    <section id="cart" class="cart-summary hidden">
+        <h2 class="section-title">Aapka Cart</h2>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Aapka cart abhi khali hai.</p>
+        </div>
+        <div class="cart-total">Total: ₹<span id="cart-total">0</span></div>
+        <div class="cart-actions">
+            <button id="checkout-btn" class="btn checkout-btn">Checkout</button>
+            <button id="clear-cart" class="btn clear-btn">Clear Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FoodiePANDA- Made by Vivek Kumar</p>
+        <h3>contact me - whatshap no-7302894055</h3>
+    </footer>
+
+    <script src="first.js"></script>
+</body>
+</html>
